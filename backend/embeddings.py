@@ -17,3 +17,10 @@ if __name__ == "__main__":
     embedded_chunks = embed_chunks(chunks)
     print(f"Total embedded chunks: {len(embedded_chunks)}")
     print(f"Sample embedding for first chunk: {embedded_chunks[0]['embedding']}")  # Print first 5 values of the embedding for the first chunk
+
+
+
+
+
+
+    
