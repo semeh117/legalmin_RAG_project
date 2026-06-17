@@ -2,7 +2,7 @@ import os
 from re import search
 import shutil
 from fastapi import FastAPI, UploadFile, File, HTTPException
-from pydantic import BaseModel #
+from pydantic import BaseModel 
 from ingestion import extract_text_from_pdf, split_into_chunks
 from embeddings import embed_chunks
 from retrieval import store, retrieve

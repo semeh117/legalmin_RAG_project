@@ -43,3 +43,4 @@ if __name__ == "__main__":
     print("\nTop results:")
     for i, doc in enumerate(results["documents"][0]):
         print(f"\nResult {i+1}: {doc[:200]}")
+        
