@@ -10,11 +10,13 @@ client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 def build_prompt(question: str ,chunks : list[dict]) -> str:
 
    """Build a prompt for the LLM using the retrieved chunks and the user's question."""
+   
+   context = ""
    for result in zip(chunks["documents"][0],chunks["metadatas"][0]):
       txt, metadata = result
-      context = f"Page {metadata['page_number']}]:\n{txt}\n\n"
+      context += f" [Page {metadata['page_number']}]:\n{txt}\n\n"
 
-      return f"""You are a legal consultant. Answer the user's question based ONLY on the document excerpts below.
+   return f"""You are a legal consultant. Answer the user's question based ONLY on the document excerpts below.
 
 
 
