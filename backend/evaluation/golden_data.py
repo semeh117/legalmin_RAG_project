@@ -28,11 +28,26 @@ GOLDEN_DATASET = [
     {  
         "question":"Who owns the code and data pipelines the employee builds during their employment?",
         "expected_answer" :"The company owns all code and data pipelines built by the employee during their employment.",
-        "expected_context":"All code, data pipelines, and related intellectual property developed by the Employee during the term of employment shall be the exclusive property of the Company.All code, data pipelines, and related intellectual property developed by the Employee during the term of employment shall be the exclusive property of the Company."
+        "expected_context":"Any software, algorithms, code, data pipelines, processes, or other intellectual property developed, created, or improved by the Employee during the term of employment, whether during or outside working hours, which relates to the Company's business, shall be the sole and exclusive property of the Company."
     },
     {
         "question":"Is the employee entitled to a bonus, and is it guaranteed?",
-        "expected_answer":"the employee is eligible for an annual performance bonus up to 15% of their base salary.",
+        "expected_answer":"The employee is eligible for an annual performance bonus of up to 15% of their base salary, but it is not guaranteed ",
         "expected_context":"The Employee shall be eligible for an annual discretionary performance bonus of up to 15% of their base salary. The bonus will be based on the achievement of individual and corporate performance"
+    },
+    {
+        "question":"what is the total potential annual compensation including base salary and maximum bonus ?",
+        "expected_answer" :"it's the sum of the base salary and the maximum bonus which is $135,000.00 + (15% of $135,000.00) = $155,250.00",
+        "expected_context": "The Company shall pay the Employee an annualized base salary of $135,000.00 USD. The Employee shall be eligible for an annual discretionary performance bonus of up to 15% of their base salary."   
+    },
+    {
+        "question" :"If the employee is terminated without cause after 3 years, how much severance do they receive?",
+        "expected_answer":"the severance is caclculated as [3 months × ($135,000 ÷ 12) = $33,750 ]",
+        "expected_context":"the Employee shall be entitled to severance pay equal to one (1) month of base salary for each completed year of service, up to a maximum of six(6) months, contingent upon the execution of a standard release of claims."
+    },
+    {
+        "question":"What is the employee's non-compete obligation after leaving the company?",
+        "expected_answer":"The document does not contain a non-compete clause.",
+        "expected_context":""
     }
 ]
