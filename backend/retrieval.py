@@ -30,7 +30,7 @@ if __name__ == "__main__":
     from embeddings import embed_chunks
 
     # Step 1: ingest and embed
-    pages = extract_text_from_pdf(r"C:\Users\mechi\Desktop\legalmind\sample_docs\test.pdf")
+    pages = extract_text_from_pdf(r"C:\Users\mechi\Desktop\legalmind\sample_docs\Data_Engineer_Employment_Contract.pdf")
     chunks = split_into_chunks(pages)
     embedded_chunks = embed_chunks(chunks)
 
