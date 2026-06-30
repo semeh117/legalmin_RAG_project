@@ -16,7 +16,7 @@ def store(chuncks :list[dict]) -> None:
         ids=[f"{chunk['page_number']}_{chunk['chunk_number']}" for chunk in chuncks]
     )
 
-def retrieve(quest: str, top_k: int = 4) -> list[dict]:
+def retrieve(quest: str, top_k: int = 2) -> list[dict]:
     """Retrieve relevant chunks based on the query."""
     query_embedding = model.encode(quest).tolist()
     results = collection.query(
